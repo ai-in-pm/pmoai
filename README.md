@@ -1,5 +1,8 @@
 # PMOAI: Project Management Office AI Agents
 
+![pmoai_icon](https://github.com/user-attachments/assets/0cea089e-0f9b-43f5-b83e-b75e12a674d4)
+
+
 PMOAI is a specialized framework for orchestrating AI agents focused on project management tasks. Built on top of CrewAI, PMOAI extends its capabilities with PM-specific agents, tasks, and tools to help automate and enhance project management workflows.
 
 ## Overview
