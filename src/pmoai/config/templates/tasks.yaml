@@ -1,0 +1,137 @@
+# PMOAI Tasks Configuration Template
+# This file defines the tasks that will be executed in the project.
+
+# Project Initiation Phase Tasks
+
+create_project_charter:
+  description: "Create a comprehensive project charter document that outlines the project's purpose, objectives, scope, stakeholders, and high-level timeline and budget."
+  expected_output: "A detailed project charter document in markdown format."
+  agent: "project_manager"
+  pm_phase: "Initiation"
+  priority: "High"
+  estimated_duration: 4.0
+  deliverables: ["Project Charter Document"]
+  stakeholders: ["Project Sponsor", "Executive Team", "Project Team"]
+  tools: ["ProjectCharterTool"]
+
+identify_stakeholders:
+  description: "Identify all project stakeholders, analyze their influence and interest, and develop a stakeholder management strategy."
+  expected_output: "A stakeholder register and communication plan."
+  agent: "stakeholder_manager"
+  pm_phase: "Initiation"
+  priority: "High"
+  dependencies: ["create_project_charter"]
+  estimated_duration: 3.0
+  deliverables: ["Stakeholder Register", "Stakeholder Communication Plan"]
+  stakeholders: ["Project Manager", "Project Sponsor", "Executive Team"]
+  tools: ["StakeholderCommunicationTool"]
+
+conduct_risk_assessment:
+  description: "Identify potential project risks, assess their probability and impact, and develop mitigation strategies."
+  expected_output: "A comprehensive risk register with mitigation strategies."
+  agent: "risk_analyst"
+  pm_phase: "Initiation"
+  priority: "High"
+  dependencies: ["create_project_charter"]
+  estimated_duration: 3.0
+  deliverables: ["Risk Register"]
+  stakeholders: ["Project Manager", "Project Team", "Executive Team"]
+  tools: ["RiskRegisterTool"]
+
+# Project Planning Phase Tasks
+
+develop_project_schedule:
+  description: "Create a detailed project schedule with tasks, dependencies, durations, and resource assignments."
+  expected_output: "A Gantt chart and project schedule."
+  agent: "project_manager"
+  pm_phase: "Planning"
+  priority: "High"
+  dependencies: ["create_project_charter"]
+  estimated_duration: 5.0
+  deliverables: ["Project Schedule", "Gantt Chart"]
+  stakeholders: ["Project Manager", "Project Team", "Executive Team"]
+  tools: ["GanttChartTool"]
+
+plan_resource_allocation:
+  description: "Identify required resources, allocate them to project tasks, and develop a resource management plan."
+  expected_output: "A resource allocation plan with resource assignments and utilization projections."
+  agent: "resource_manager"
+  pm_phase: "Planning"
+  priority: "High"
+  dependencies: ["develop_project_schedule"]
+  estimated_duration: 3.0
+  deliverables: ["Resource Allocation Plan"]
+  stakeholders: ["Project Manager", "Project Team", "Functional Managers"]
+  tools: ["ResourceAllocationTool"]
+
+create_quality_management_plan:
+  description: "Develop a quality management plan that defines quality standards, metrics, and processes for the project."
+  expected_output: "A quality management plan with quality metrics and control processes."
+  agent: "quality_assurance"
+  pm_phase: "Planning"
+  priority: "Medium"
+  dependencies: ["create_project_charter"]
+  estimated_duration: 2.5
+  deliverables: ["Quality Management Plan"]
+  stakeholders: ["Project Manager", "Quality Assurance Team", "Project Team"]
+
+# Project Execution Phase Tasks
+
+conduct_sprint_planning:
+  description: "Facilitate sprint planning meeting to define sprint goals, select backlog items, and estimate effort."
+  expected_output: "Sprint backlog with estimated user stories and tasks."
+  agent: "scrum_master"
+  pm_phase: "Execution"
+  priority: "High"
+  dependencies: ["develop_project_schedule"]
+  estimated_duration: 2.0
+  deliverables: ["Sprint Backlog"]
+  stakeholders: ["Scrum Master", "Product Owner", "Development Team"]
+
+prioritize_product_backlog:
+  description: "Review and prioritize the product backlog based on business value, dependencies, and team capacity."
+  expected_output: "Prioritized product backlog with clear acceptance criteria."
+  agent: "product_owner"
+  pm_phase: "Execution"
+  priority: "High"
+  dependencies: ["conduct_sprint_planning"]
+  estimated_duration: 2.0
+  deliverables: ["Prioritized Product Backlog"]
+  stakeholders: ["Product Owner", "Scrum Master", "Development Team"]
+
+# Project Monitoring and Controlling Phase Tasks
+
+monitor_project_progress:
+  description: "Track project progress against the baseline, identify variances, and implement corrective actions."
+  expected_output: "Project status report with performance metrics and recommendations."
+  agent: "project_manager"
+  pm_phase: "Monitoring"
+  priority: "High"
+  dependencies: ["develop_project_schedule"]
+  estimated_duration: 2.0
+  deliverables: ["Project Status Report"]
+  stakeholders: ["Project Manager", "Project Sponsor", "Executive Team"]
+
+manage_project_risks:
+  description: "Monitor identified risks, implement mitigation strategies, and identify new risks."
+  expected_output: "Updated risk register with status of mitigation actions."
+  agent: "risk_analyst"
+  pm_phase: "Monitoring"
+  priority: "Medium"
+  dependencies: ["conduct_risk_assessment"]
+  estimated_duration: 1.5
+  deliverables: ["Updated Risk Register"]
+  stakeholders: ["Risk Analyst", "Project Manager", "Project Team"]
+
+# Project Closing Phase Tasks
+
+conduct_project_closure:
+  description: "Formalize project completion, document lessons learned, and release resources."
+  expected_output: "Project closure report with lessons learned and recommendations."
+  agent: "project_manager"
+  pm_phase: "Closing"
+  priority: "High"
+  dependencies: ["monitor_project_progress"]
+  estimated_duration: 3.0
+  deliverables: ["Project Closure Report", "Lessons Learned Document"]
+  stakeholders: ["Project Manager", "Project Sponsor", "Project Team"]

@@ -1,0 +1,123 @@
+requirements_gathering_task:
+  description: >
+    Gather and document the project requirements from stakeholders.
+    
+    You need to:
+    1. Identify all key stakeholders for the project
+    2. Conduct stakeholder interviews to understand their needs and expectations
+    3. Document functional and non-functional requirements
+    4. Prioritize requirements based on business value and technical feasibility
+    5. Create a comprehensive requirements document
+    
+    The requirements document should include:
+    - Project overview and objectives
+    - Stakeholder identification and analysis
+    - Functional requirements
+    - Non-functional requirements (performance, security, usability, etc.)
+    - Constraints and assumptions
+    - Acceptance criteria
+  expected_output: >
+    A comprehensive requirements document that clearly outlines all project requirements,
+    stakeholder needs, and acceptance criteria.
+  agent: business_analyst
+
+project_planning_task:
+  description: >
+    Create a detailed project plan based on the requirements document.
+    
+    You need to:
+    1. Define the project scope based on the requirements
+    2. Create a work breakdown structure (WBS)
+    3. Develop a project schedule with milestones and deliverables
+    4. Identify resource requirements
+    5. Develop a risk management plan
+    6. Create a communication plan
+    7. Define the project budget
+    
+    The project plan should include:
+    - Project scope statement
+    - Work breakdown structure
+    - Project schedule with Gantt chart
+    - Resource allocation plan
+    - Risk register with mitigation strategies
+    - Communication plan
+    - Budget estimate
+  expected_output: >
+    A comprehensive project plan that outlines the project scope, schedule, resources,
+    risks, communication strategy, and budget.
+  agent: project_manager
+  dependencies: [requirements_gathering_task]
+
+technical_design_task:
+  description: >
+    Create a technical design document based on the requirements and project plan.
+    
+    You need to:
+    1. Analyze the requirements from a technical perspective
+    2. Define the system architecture
+    3. Identify technical components and their interactions
+    4. Define data models and interfaces
+    5. Identify technical constraints and assumptions
+    6. Document technical standards and best practices
+    
+    The technical design document should include:
+    - System architecture diagram
+    - Component specifications
+    - Data models and database design
+    - Interface definitions
+    - Technical standards and guidelines
+    - Performance considerations
+    - Security considerations
+  expected_output: >
+    A comprehensive technical design document that outlines the system architecture,
+    components, data models, interfaces, and technical standards.
+  agent: technical_lead
+  dependencies: [requirements_gathering_task, project_planning_task]
+
+quality_assurance_plan_task:
+  description: >
+    Create a quality assurance plan for the project.
+    
+    You need to:
+    1. Define quality objectives and standards
+    2. Develop a testing strategy
+    3. Create test plans and test cases
+    4. Define quality metrics and acceptance criteria
+    5. Establish quality control processes
+    6. Define defect management procedures
+    
+    The quality assurance plan should include:
+    - Quality objectives and standards
+    - Testing strategy and approach
+    - Test plans and test cases
+    - Quality metrics and acceptance criteria
+    - Quality control processes
+    - Defect management procedures
+  expected_output: >
+    A comprehensive quality assurance plan that outlines the testing strategy,
+    quality standards, and defect management procedures.
+  agent: quality_assurance
+  dependencies: [requirements_gathering_task, project_planning_task]
+
+stakeholder_management_plan_task:
+  description: >
+    Create a stakeholder management plan for the project.
+    
+    You need to:
+    1. Identify all stakeholders and their interests
+    2. Analyze stakeholder influence and impact
+    3. Develop stakeholder engagement strategies
+    4. Create a communication plan for each stakeholder group
+    5. Define stakeholder management procedures
+    
+    The stakeholder management plan should include:
+    - Stakeholder identification and analysis
+    - Stakeholder engagement strategies
+    - Communication plan for each stakeholder group
+    - Stakeholder management procedures
+    - Stakeholder feedback mechanisms
+  expected_output: >
+    A comprehensive stakeholder management plan that outlines stakeholder engagement
+    strategies, communication plans, and management procedures.
+  agent: stakeholder_manager
+  dependencies: [requirements_gathering_task]

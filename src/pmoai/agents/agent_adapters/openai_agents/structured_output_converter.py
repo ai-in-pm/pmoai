@@ -1,0 +1,4 @@
+from crewai.agents.agent_adapters.openai_agents.structured_output_converter import OpenAIConverterAdapter as CrewAIOpenAIConverterAdapter
+
+# Re-export CrewAI's OpenAIConverterAdapter
+OpenAIConverterAdapter = CrewAIOpenAIConverterAdapter

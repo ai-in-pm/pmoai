@@ -1,0 +1,4 @@
+from crewai.agents.agent_adapters.langgraph.structured_output_converter import LangGraphConverterAdapter as CrewAILangGraphConverterAdapter
+
+# Re-export CrewAI's LangGraphConverterAdapter
+LangGraphConverterAdapter = CrewAILangGraphConverterAdapter

@@ -1,0 +1,32 @@
+This file contains user preferences for the {{crew_name}} crew.
+
+Project Management Methodology: Agile
+Project Phase: Planning
+Organization: ACME Corporation
+Portfolio: Digital Transformation
+
+Stakeholders:
+- Project Sponsor: John Smith (CIO)
+- Business Owner: Jane Doe (VP of Operations)
+- End Users: Customer Service Representatives
+
+Project Constraints:
+- Budget: $500,000
+- Timeline: 6 months
+- Resources: 5 team members
+
+Project Objectives:
+1. Improve customer service efficiency by 20%
+2. Reduce operational costs by 15%
+3. Enhance customer satisfaction scores by 10%
+
+Project Risks:
+1. Resource availability
+2. Stakeholder engagement
+3. Technical complexity
+4. Regulatory compliance
+
+Communication Preferences:
+- Weekly status reports
+- Bi-weekly stakeholder meetings
+- Monthly steering committee reviews

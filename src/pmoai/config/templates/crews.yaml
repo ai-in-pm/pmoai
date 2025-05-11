@@ -1,0 +1,93 @@
+# PMOAI Crews Configuration Template
+# This file defines the crews that will be used in the project.
+
+# Project Initiation Crew
+project_initiation_crew:
+  agents: ["project_manager", "stakeholder_manager", "risk_analyst"]
+  tasks: ["create_project_charter", "identify_stakeholders", "conduct_risk_assessment"]
+  process: "sequential"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Agile"
+  project_phase: "Initiation"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Project Planning Crew
+project_planning_crew:
+  agents: ["project_manager", "resource_manager", "quality_assurance"]
+  tasks: ["develop_project_schedule", "plan_resource_allocation", "create_quality_management_plan"]
+  process: "sequential"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Agile"
+  project_phase: "Planning"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Agile Execution Crew
+agile_execution_crew:
+  agents: ["scrum_master", "product_owner", "project_manager"]
+  tasks: ["conduct_sprint_planning", "prioritize_product_backlog"]
+  process: "agile"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Agile"
+  project_phase: "Execution"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Project Monitoring Crew
+project_monitoring_crew:
+  agents: ["project_manager", "risk_analyst"]
+  tasks: ["monitor_project_progress", "manage_project_risks"]
+  process: "sequential"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Agile"
+  project_phase: "Monitoring"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Project Closing Crew
+project_closing_crew:
+  agents: ["project_manager"]
+  tasks: ["conduct_project_closure"]
+  process: "sequential"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Agile"
+  project_phase: "Closing"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Waterfall Project Crew
+waterfall_project_crew:
+  agents: ["project_manager", "business_analyst", "quality_assurance", "resource_manager"]
+  tasks: ["create_project_charter", "develop_project_schedule", "plan_resource_allocation", "create_quality_management_plan", "monitor_project_progress", "conduct_project_closure"]
+  process: "waterfall"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Waterfall"
+  project_phase: "All Phases"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
+
+# Hybrid Project Crew
+hybrid_project_crew:
+  agents: ["project_manager", "scrum_master", "product_owner", "risk_analyst", "resource_manager"]
+  tasks: ["create_project_charter", "conduct_risk_assessment", "develop_project_schedule", "conduct_sprint_planning", "prioritize_product_backlog", "monitor_project_progress", "conduct_project_closure"]
+  process: "hybrid"
+  verbose: true
+  project_name: "Project Name"
+  project_code: "PRJ-2023"
+  project_methodology: "Hybrid"
+  project_phase: "All Phases"
+  organization: "Organization Name"
+  portfolio: "Portfolio Name"
